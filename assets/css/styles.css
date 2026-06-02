@@ -805,6 +805,74 @@ summary::marker {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.booking-note,
+.front-runner-callout,
+.comparison-block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+}
+
+.booking-note {
+  margin-bottom: 18px;
+  border-color: rgba(242, 161, 58, 0.34);
+  background:
+    linear-gradient(135deg, rgba(242, 161, 58, 0.11), rgba(31, 75, 53, 0.12)),
+    var(--bg-panel);
+  padding: 18px;
+}
+
+.booking-note p {
+  color: #f0d7b2;
+  font-weight: 750;
+}
+
+.front-runner-callout {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 18px;
+}
+
+.front-runner-callout ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.front-runner-callout li {
+  display: grid;
+  gap: 4px;
+  min-height: 86px;
+  border: 1px solid rgba(242, 161, 58, 0.24);
+  border-radius: var(--radius);
+  background: rgba(242, 161, 58, 0.075);
+  padding: 14px;
+}
+
+.front-runner-callout strong {
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.front-runner-callout span {
+  color: var(--gold);
+  font-size: 0.88rem;
+  font-weight: 850;
+}
+
+.option-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--amber);
+  font-size: 0.76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
 .rental-card,
 .link-card,
 .food-card,
@@ -870,6 +938,52 @@ summary::marker {
 
 .pros-cons p {
   margin-top: 6px;
+}
+
+.comparison-block {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+  padding: 18px;
+}
+
+.table-wrap {
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  background: rgba(8, 11, 10, 0.28);
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: rgba(242, 161, 58, 0.1);
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+td {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .link-grid {
@@ -1163,7 +1277,8 @@ summary::marker {
   .lore-grid,
   .question-grid,
   .gallery-grid,
-  .post-gallery {
+  .post-gallery,
+  .front-runner-callout ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1306,7 +1421,8 @@ summary::marker {
   .gallery-grid,
   .post-gallery,
   .roster-grid,
-  .check-grid {
+  .check-grid,
+  .front-runner-callout ul {
     grid-template-columns: 1fr;
   }
 
