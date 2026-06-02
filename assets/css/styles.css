@@ -942,10 +942,6 @@ p {
   transform: rotate(-45deg);
 }
 
-.poll-questions {
-  margin-top: 18px;
-}
-
 details {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -961,25 +957,6 @@ summary {
 
 summary::marker {
   color: var(--amber);
-}
-
-.question-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  padding: 0 18px 18px;
-}
-
-.question-grid article {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(8, 11, 10, 0.28);
-  padding: 16px;
-}
-
-.question-grid p {
-  margin-top: 10px;
-  color: var(--muted);
 }
 
 .rental-grid {
@@ -1319,12 +1296,6 @@ tbody tr:last-child td {
 
 .activity-layout p + p {
   margin-top: 16px;
-}
-
-.safety-note {
-  border-left: 4px solid var(--red);
-  background: rgba(217, 88, 69, 0.1);
-  padding: 12px 14px;
 }
 
 .activity-card {
@@ -1738,7 +1709,6 @@ tbody tr:last-child td {
 
   .wishlist-grid,
   .lore-grid,
-  .question-grid,
   .gallery-grid,
   .post-gallery,
   .front-runner-callout ul {
@@ -1922,7 +1892,6 @@ tbody tr:last-child td {
   .energy-strip,
   .rules-grid,
   .lore-grid,
-  .question-grid,
   .photo-strip,
   .gallery-grid,
   .post-gallery,
