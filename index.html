@@ -590,8 +590,11 @@
             </article>
           </div>
 
-          <div class="comparison-block" aria-labelledby="comparison-title">
-            <h3 id="comparison-title">Cabin Comparison</h3>
+          <details class="comparison-block compact-details" aria-labelledby="comparison-title">
+            <summary>
+              <span id="comparison-title">Cabin Comparison</span>
+              <small>Open the quick table if you want specs side by side.</small>
+            </summary>
             <div class="table-wrap" role="region" aria-label="Rental option comparison table" tabindex="0">
               <table>
                 <thead>
@@ -688,7 +691,7 @@
                 </tbody>
               </table>
             </div>
-          </div>
+          </details>
         </div>
       </section>
 
@@ -700,11 +703,11 @@
             <p>Anything that might matter can live here: activities, food, supplies, and backup plans.</p>
           </div>
 
-          <div class="link-grid">
+          <div class="link-summary-grid">
             <article class="link-card main-link">
               <span class="badge candidate">Main Activity</span>
               <h3>Smash N Dash Rage Room</h3>
-              <p>Candidate Saturday activity. Closed-toe shoes required, pants recommended or required depending on package/coveralls, and booking ahead is the move.</p>
+              <p>Candidate Saturday activity. Closed-toe shoes, pants, book ahead, and handle sober driving.</p>
               <a
                 class="button button-external"
                 href="https://smashndashrageroom.com"
@@ -712,106 +715,34 @@
                 rel="noopener noreferrer"
               >Open Site</a>
             </article>
-            <article class="link-card">
-              <span class="badge">Rental Source</span>
-              <h3>Southern Comfort Cabin Rentals</h3>
-              <p>North Georgia cabin search source.</p>
-              <a
-                class="button button-external"
-                href="https://www.southerncomfortcabinrentals.com/north-ga-cabins/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Open Site</a>
-            </article>
-            <article class="link-card">
-              <span class="badge">Rental Source</span>
-              <h3>Airbnb Candidate</h3>
-              <p>Current candidate listing. Verify all details before booking.</p>
-              <a
-                class="button button-external"
-                href="https://www.airbnb.com/rooms/656510478304392273"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Open Listing</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Vrbo Search / Listing</h3>
-              <p>Add a Vrbo shortlist link here.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Direct Cabin Rental Company</h3>
-              <p>Add another local rental company here.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Friday Dinner Candidate</h3>
-              <p>Pizza, wings, tacos, BBQ pickup, or easy cabin dinner.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Saturday Dinner Candidate</h3>
-              <p>Big bachelor dinner: grill night, restaurant, or catered trays.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Sunday Brunch Candidate</h3>
-              <p>Optional if checkout timing allows.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Grocery Stop</h3>
-              <p>Add the best grocery stop after cabin booking.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Liquor Store / Package Store</h3>
-              <p>Keep purchase details private and plan safe transport.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Coffee Stop</h3>
-              <p>The Sunday recovery infrastructure deserves respect.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Downtown Blue Ridge</h3>
-              <p>Possible walk-around, food, coffee, or scenic reset.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Brewery Candidate</h3>
-              <p>Only if the group wants an outing and transportation is handled safely.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Short Hike / Scenic Overlook</h3>
-              <p>Optional daytime reset if the group has energy.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Lake / River Option</h3>
-              <p>Add after the cabin area is final.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
-            <article class="link-card">
-              <span class="badge muted">TBD</span>
-              <h3>Rainy-Day Indoor Backup</h3>
-              <p>For weather, low energy, or "we are staying near the couch" moments.</p>
-              <a class="button button-ghost" href="#">TBD Link</a>
-            </article>
+            <details class="link-card compact-details">
+              <summary><span>Rental Sources</span><small>Southern Comfort, Airbnb, Vrbo, direct cabin companies.</small></summary>
+              <ul class="resource-list">
+                <li><a href="https://www.southerncomfortcabinrentals.com/north-ga-cabins/" target="_blank" rel="noopener noreferrer">Southern Comfort Cabin Rentals</a></li>
+                <li><a href="https://www.airbnb.com/rooms/656510478304392273" target="_blank" rel="noopener noreferrer">Original Airbnb Candidate</a></li>
+                <li><span>Vrbo search/listing - TBD</span></li>
+                <li><span>Direct cabin rental company - TBD</span></li>
+              </ul>
+            </details>
+            <details class="link-card compact-details">
+              <summary><span>Food + Supply Stops</span><small>Keep actual links TBD until the cabin area is final.</small></summary>
+              <ul class="resource-list">
+                <li>Friday dinner candidate - pizza, wings, tacos, or BBQ pickup.</li>
+                <li>Saturday dinner candidate - grill night, restaurant, or catered trays.</li>
+                <li>Sunday brunch candidate - only if checkout timing allows.</li>
+                <li>Grocery stop, package store, and coffee stop - TBD.</li>
+              </ul>
+            </details>
+            <details class="link-card compact-details">
+              <summary><span>Side Quests</span><small>Optional if the group has energy and transport is handled.</small></summary>
+              <ul class="resource-list">
+                <li>Downtown Blue Ridge walk-around.</li>
+                <li>Brewery candidate with safe transportation.</li>
+                <li>Short hike or scenic overlook.</li>
+                <li>Lake/river option after cabin area is final.</li>
+                <li>Rainy-day indoor backup.</li>
+              </ul>
+            </details>
           </div>
         </div>
       </section>
@@ -828,78 +759,66 @@
           </div>
 
           <div class="timeline">
-            <article class="timeline-day">
-              <div class="timeline-date">
-                <span>Thu</span>
-                <strong>Aug 20</strong>
-              </div>
-              <div>
-                <h3>Arrival Night</h3>
-                <ul>
-                  <li>Evening arrival window.</li>
-                  <li>Unpack and claim rooms.</li>
-                  <li>Easy dinner: pizza, wings, tacos, BBQ pickup, or whatever is practical.</li>
-                  <li>First Karim toast.</li>
-                  <li>Hot tub, games, music, and fire pit if available.</li>
-                  <li>Keep Thursday as arrival/chill hype night, not the hardest drinking night.</li>
-                </ul>
-              </div>
-            </article>
+            <details class="timeline-day" open>
+              <summary>
+                <span class="timeline-date"><span>Thu</span><strong>Aug 20</strong></span>
+                <span>Arrival Night</span>
+              </summary>
+              <ul>
+                <li>Evening arrival window.</li>
+                <li>Unpack and claim rooms.</li>
+                <li>Easy dinner: pizza, wings, tacos, BBQ pickup, or whatever is practical.</li>
+                <li>First Karim toast.</li>
+                <li>Hot tub, games, music, and fire pit if available.</li>
+                <li>Keep Thursday as arrival/chill hype night, not the hardest drinking night.</li>
+              </ul>
+            </details>
 
-            <article class="timeline-day">
-              <div class="timeline-date">
-                <span>Fri</span>
-                <strong>Aug 21</strong>
-              </div>
-              <div>
-                <h3>Cabin Day</h3>
-                <ul>
-                  <li>Big breakfast.</li>
-                  <li>Outdoor games, creek, forest, hot tub, and cabin hangout time.</li>
-                  <li>Optional Blue Ridge / Ellijay outing, grocery restock, brewery, or chill reset.</li>
-                  <li>Grill or steak dinner.</li>
-                  <li>Karim roast, memory circle, trivia, or fake awards.</li>
-                  <li>Fire pit and late-night cabin hangout.</li>
-                </ul>
-              </div>
-            </article>
+            <details class="timeline-day">
+              <summary>
+                <span class="timeline-date"><span>Fri</span><strong>Aug 21</strong></span>
+                <span>Cabin Day</span>
+              </summary>
+              <ul>
+                <li>Big breakfast.</li>
+                <li>Outdoor games, creek, forest, hot tub, and cabin hangout time.</li>
+                <li>Optional Blue Ridge / Ellijay outing, grocery restock, brewery, or chill reset.</li>
+                <li>Grill or steak dinner.</li>
+                <li>Karim roast, memory circle, trivia, or fake awards.</li>
+                <li>Fire pit and late-night cabin hangout.</li>
+              </ul>
+            </details>
 
-            <article class="timeline-day">
-              <div class="timeline-date">
-                <span>Sat</span>
-                <strong>Aug 22</strong>
-              </div>
-              <div>
-                <h3>Main Event Day</h3>
-                <ul>
-                  <li>Recovery breakfast.</li>
-                  <li>Prep for rage room: closed-toe shoes, pants, clothes that can get dirty.</li>
-                  <li>Drive to off-site activity with transportation planned carefully.</li>
-                  <li>Smash N Dash Rage Room candidate.</li>
-                  <li>Return to cabin.</li>
-                  <li>Big bachelor dinner.</li>
-                  <li>Main Karim toast and final big celebration night.</li>
-                </ul>
-              </div>
-            </article>
+            <details class="timeline-day">
+              <summary>
+                <span class="timeline-date"><span>Sat</span><strong>Aug 22</strong></span>
+                <span>Main Event Day</span>
+              </summary>
+              <ul>
+                <li>Recovery breakfast.</li>
+                <li>Prep for rage room: closed-toe shoes, pants, clothes that can get dirty.</li>
+                <li>Drive to off-site activity with transportation planned carefully.</li>
+                <li>Smash N Dash Rage Room candidate.</li>
+                <li>Return to cabin.</li>
+                <li>Big bachelor dinner.</li>
+                <li>Main Karim toast and final big celebration night.</li>
+              </ul>
+            </details>
 
-            <article class="timeline-day">
-              <div class="timeline-date">
-                <span>Sun</span>
-                <strong>Aug 23</strong>
-              </div>
-              <div>
-                <h3>Recovery + Sendoff</h3>
-                <ul>
-                  <li>Slow breakfast.</li>
-                  <li>Cleanup and cabin reset.</li>
-                  <li>Final group photo.</li>
-                  <li>Optional brunch or scenic stop if checkout is early.</li>
-                  <li>Drive home Sunday evening if possible.</li>
-                  <li>Late checkout should be requested, but not assumed.</li>
-                </ul>
-              </div>
-            </article>
+            <details class="timeline-day">
+              <summary>
+                <span class="timeline-date"><span>Sun</span><strong>Aug 23</strong></span>
+                <span>Recovery + Sendoff</span>
+              </summary>
+              <ul>
+                <li>Slow breakfast.</li>
+                <li>Cleanup and cabin reset.</li>
+                <li>Final group photo.</li>
+                <li>Optional brunch or scenic stop if checkout is early.</li>
+                <li>Drive home Sunday evening if possible.</li>
+                <li>Late checkout should be requested, but not assumed.</li>
+              </ul>
+            </details>
           </div>
         </div>
       </section>
@@ -1012,9 +931,9 @@
             <h2 id="packing-title">Bring cabin gear, rage room clothes, and recovery supplies.</h2>
           </div>
 
-          <div class="packing-grid" data-packing-list>
-            <article class="packing-card">
-              <h3>Clothing</h3>
+          <div class="packing-grid compact-card-grid" data-packing-list>
+            <details class="packing-card">
+              <summary>Clothing</summary>
               <ul>
                 <li>Comfortable cabin clothes</li>
                 <li>Pants for rage room</li>
@@ -1025,9 +944,9 @@
                 <li>Clothes that can get dirty</li>
                 <li>Going-out/casual dinner fit if needed</li>
               </ul>
-            </article>
-            <article class="packing-card">
-              <h3>Toiletries</h3>
+            </details>
+            <details class="packing-card">
+              <summary>Toiletries</summary>
               <ul>
                 <li>Toothbrush/toothpaste</li>
                 <li>Deodorant</li>
@@ -1036,9 +955,9 @@
                 <li>Sunscreen</li>
                 <li>Bug spray</li>
               </ul>
-            </article>
-            <article class="packing-card">
-              <h3>Trip supplies</h3>
+            </details>
+            <details class="packing-card">
+              <summary>Trip supplies</summary>
               <ul>
                 <li>Chargers</li>
                 <li>Portable battery</li>
@@ -1051,9 +970,9 @@
                 <li>Cooler</li>
                 <li>Folding chair if needed</li>
               </ul>
-            </article>
-            <article class="packing-card">
-              <h3>Recovery</h3>
+            </details>
+            <details class="packing-card">
+              <summary>Recovery</summary>
               <ul>
                 <li>Liquid I.V. / Pedialyte</li>
                 <li>Gatorade</li>
@@ -1062,7 +981,7 @@
                 <li>Water</li>
                 <li>Snacks</li>
               </ul>
-            </article>
+            </details>
           </div>
         </div>
       </section>
@@ -1079,9 +998,9 @@
             </p>
           </div>
 
-          <div class="food-grid">
-            <article class="food-card">
-              <h3>Meal plan</h3>
+          <div class="food-grid compact-card-grid">
+            <details class="food-card" open>
+              <summary>Meal plan</summary>
               <ul>
                 <li>Thursday dinner: pizza, wings, tacos, or BBQ pickup.</li>
                 <li>Friday breakfast: eggs, bacon, biscuits, coffee.</li>
@@ -1090,9 +1009,9 @@
                 <li>Saturday dinner: big bachelor dinner.</li>
                 <li>Sunday breakfast/brunch: easy cleanup meal.</li>
               </ul>
-            </article>
-            <article class="food-card">
-              <h3>Drink plan</h3>
+            </details>
+            <details class="food-card">
+              <summary>Drink plan</summary>
               <ul>
                 <li>Vodka</li>
                 <li>Whiskey/bourbon</li>
@@ -1106,7 +1025,7 @@
                 <li>Liquid I.V. / Pedialyte</li>
                 <li>Ice, more than expected</li>
               </ul>
-            </article>
+            </details>
             <article class="food-card signature-card">
               <h3>Signature drink placeholder</h3>
               <p>Pick one later, keep it classy enough for the public internet.</p>
@@ -1187,20 +1106,6 @@
             </article>
           </div>
 
-          <div class="photo-strip" aria-label="Karim lore photo strip">
-            <figure class="site-photo">
-              <img src="assets/img/tposekarim.jpg" alt="Karim standing with arms out in a dramatic T-pose.">
-              <figcaption>T-pose jurisdiction</figcaption>
-            </figure>
-            <figure class="site-photo thumb-crop">
-              <img src="assets/img/thumbsupkarim.jpg" alt="Karim giving a thumbs up at night.">
-              <figcaption>Thumbs-up era</figcaption>
-            </figure>
-            <figure class="site-photo">
-              <img src="assets/img/kascream.jpg" alt="Karim making a loud dramatic face.">
-              <figcaption>Volume warning</figcaption>
-            </figure>
-          </div>
         </div>
       </section>
 
@@ -1326,28 +1231,6 @@
             </label>
             <p class="song-request-status" data-song-request-status aria-live="polite"></p>
           </form>
-        </div>
-      </section>
-
-      <section class="section alt-section" id="gallery" aria-labelledby="gallery-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Karim Gallery</p>
-            <h2 id="gallery-title">For the photos that survived group review.</h2>
-            <p>
-              Current approved classics are live. Post-trip cabin, rage room, fire
-              pit, and final group photos can join this wall later.
-            </p>
-          </div>
-
-          <div class="gallery-grid post-gallery">
-            <figure class="site-photo"><img src="assets/img/karim-hero.jpg" alt="Karim smiling close to the camera."><figcaption>The groom</figcaption></figure>
-            <figure class="site-photo"><img src="assets/img/kascream.jpg" alt="Karim making a dramatic scream face."><figcaption>Inside voice unavailable</figcaption></figure>
-            <figure class="site-photo"><img src="assets/img/mogkarim.jpg" alt="Karim making a serious face at a table."><figcaption>Blue steel variant</figcaption></figure>
-            <figure class="site-photo"><img src="assets/img/nerdkarim.jpg" alt="Karim wearing glasses indoors."><figcaption>Operations lead</figcaption></figure>
-            <figure class="site-photo"><img src="assets/img/baldkarim.jpg" alt="Younger Karim in a playful pose."><figcaption>Deep lore</figcaption></figure>
-            <figure class="site-photo"><img src="assets/img/ahegaokarim.jpg" alt="Karim making a silly sleepy face."><figcaption>Emergency meme</figcaption></figure>
-          </div>
         </div>
       </section>
 
