@@ -15,6 +15,27 @@ assets/img/north-georgia-cabin-hero.png
 This is a generated, non-identifying cabin/fire-pit hero background. It contains
 no people, no private address clues, and no readable text.
 
+## Current Karim Image Set
+
+These files are currently used throughout the page:
+
+```text
+assets/img/karim-hero.jpg
+assets/img/gigakarim.jpg
+assets/img/thumbsupkarim.jpg
+assets/img/tposekarim.jpg
+assets/img/ahegaokarim.jpg
+assets/img/baldkarim.jpg
+assets/img/gamingbulgekarim.jpg
+assets/img/kascream.jpg
+assets/img/mogkarim.jpg
+assets/img/nerdkarim.jpg
+```
+
+`gigakarim.jpg` is used as the massive feature image. `thumbsupkarim.jpg` is
+cropped in CSS where it appears so Karim stays framed instead of getting buried
+under empty night sky.
+
 ## Recommended Future Filenames
 
 Hero:

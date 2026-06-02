@@ -189,4 +189,99 @@
     });
   }
 
+  var songRequestForm = document.querySelector("[data-song-request-form]");
+  var songRequestOutput = document.querySelector("[data-song-request-output]");
+  var songRequestStatus = document.querySelector("[data-song-request-status]");
+  var copySongRequestButton = document.querySelector("[data-copy-song-request]");
+
+  function setSongRequestStatus(message) {
+    if (songRequestStatus) {
+      songRequestStatus.textContent = message;
+    }
+  }
+
+  function getSongRequestText() {
+    if (!songRequestForm) {
+      return "";
+    }
+
+    var formData = new FormData(songRequestForm);
+    var song = String(formData.get("song") || "").trim();
+    var artist = String(formData.get("artist") || "").trim();
+    var submittedBy = String(formData.get("submittedBy") || "").trim();
+    var vibe = String(formData.get("vibe") || "").trim();
+    var notes = String(formData.get("notes") || "").trim();
+
+    if (!song || !artist) {
+      return "";
+    }
+
+    var lines = [
+      "Karim's Last Ride song request:",
+      song + " - " + artist,
+      "Vibe: " + (vibe || "Playlist candidate")
+    ];
+
+    if (submittedBy) {
+      lines.push("Submitted by: " + submittedBy);
+    }
+
+    if (notes) {
+      lines.push("Notes: " + notes);
+    }
+
+    return lines.join("\n");
+  }
+
+  function writeSongRequestOutput(text) {
+    if (songRequestOutput) {
+      songRequestOutput.value = text;
+      songRequestOutput.focus();
+      songRequestOutput.select();
+    }
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+
+    return Promise.reject(new Error("Clipboard API unavailable"));
+  }
+
+  if (songRequestForm) {
+    songRequestForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var text = getSongRequestText();
+
+      if (!text) {
+        setSongRequestStatus("Add at least a song title and artist.");
+        return;
+      }
+
+      writeSongRequestOutput(text);
+      setSongRequestStatus("Request formatted. Copy it and paste it in the group chat.");
+    });
+  }
+
+  if (copySongRequestButton) {
+    copySongRequestButton.addEventListener("click", function () {
+      var text = songRequestOutput && songRequestOutput.value.trim() ? songRequestOutput.value.trim() : getSongRequestText();
+
+      if (!text) {
+        setSongRequestStatus("Format a request first.");
+        return;
+      }
+
+      writeSongRequestOutput(text);
+      copyText(text)
+        .then(function () {
+          setSongRequestStatus("Song request copied.");
+        })
+        .catch(function () {
+          setSongRequestStatus("Copy blocked by browser. The request is selected so you can copy it manually.");
+        });
+    });
+  }
 })();
