@@ -504,6 +504,18 @@ p {
 
 .hero-photo-placeholder {
   align-self: end;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.hero-photo-fallback {
   padding: 22px;
 }
 
@@ -513,7 +525,7 @@ p {
   font-weight: 900;
 }
 
-.hero-photo-placeholder p:last-child {
+.hero-photo-fallback p:last-child {
   margin-top: 10px;
   color: var(--muted);
 }

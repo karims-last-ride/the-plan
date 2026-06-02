@@ -23,6 +23,9 @@ Hero:
 assets/img/karim-hero.jpg
 ```
 
+This filename is already wired into the hero card in `index.html`. Save Karim's
+hero portrait with this exact name and the card will show it automatically.
+
 Karim lore:
 
 ```text
